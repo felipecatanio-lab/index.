@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velozes & Furiosos | Skyline R34</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #0a0a0a;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    /* Hero com imagem principal do Skyline R34 */
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)),
+                  url('https://images.unsplash.com/photo-1609521263047-f8f205293f24?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero-content {
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: 5rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 8px;
+      color: #00ff00;
+      text-shadow: 0 0 30px #00ff00, 0 0 60px #ff0000;
+      margin-bottom: 10px;
+    }
+
+    .hero .subtitle {
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+      color: #ffffff;
+    }
+
+    .btn {
+      padding: 18px 55px;
+      font-size: 1.5rem;
+      background: #ff0000;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: all 0.4s;
+    }
+
+    .btn:hover {
+      background: #00ff00;
+      color: #000;
+      transform: scale(1.1);
+      box-shadow: 0 0 50px #00ff00;
+    }
+
+    /* Seção História */
+    .section {
+      padding: 100px 8%;
+      background: #111111;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 3.5rem;
+      margin-bottom: 60px;
+      color: #00ff00;
+    }
+
+    .car-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 60px;
+      align-items: center;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+
+    .car-image {
+      flex: 1;
+      min-width: 320px;
+    }
+
+    .car-image img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 0 60px rgba(0, 255, 0, 0.5);
+      border: 4px solid #00ff00;
+    }
+
+    .car-text {
+      flex: 1;
+      min-width: 320px;
+    }
+
+    .car-text h3 {
+      font-size: 2.6rem;
+      color: #00ff00;
+      margin-bottom: 25px;
+    }
+
+    .specs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .spec {
+      background: rgba(0, 255, 0, 0.1);
+      padding: 22px;
+      border-radius: 12px;
+      border-left: 6px solid #00ff00;
+    }
+
+    .spec strong {
+      display: block;
+      color: #00ff00;
+      font-size: 1.2rem;
+    }
+
+    /* Timeline simples */
+    .timeline {
+      max-width: 1000px;
+      margin: 80px auto 0;
+    }
+
+    .event {
+      background: #1a1a1a;
+      padding: 25px 30px;
+      margin: 25px 0;
+      border-radius: 15px;
+      border: 2px solid #333;
+      transition: 0.3s;
+    }
+
+    .event:hover {
+      border-color: #00ff00;
+      transform: translateX(10px);
+    }
+
+    .year {
+      color: #00ff00;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 70px 20px;
+      background: #000;
+      font-size: 1.2rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 3.2rem; }
+      .hero .subtitle { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section com imagem do Skyline R34 -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>SKYLINE GT-R R34</h1>
+      <p class="subtitle">O Godzilla das Ruas • Velozes & Furiosos (2003)</p>
+      <button class="btn" onclick="document.getElementById('historia').scrollIntoView({ behavior: 'smooth' })">
+        Ver a História
+      </button>
+    </div>
+  </section>
+
+  <!-- Seção História e Imagem -->
+  <section class="section" id="historia">
+    <h2>História do Nissan Skyline GT-R R34</h2>
+
+    <div class="car-container">
+      <div class="car-image">
+        <img src="https://images.unsplash.com/photo-1609521263047-f8f205293f24?ixlib=rb-4.0.3&auto=format&fit=crop&q=80" 
+             alt="Nissan Skyline GT-R R34 - Velozes e Furiosos">
+      </div>
+
+      <div class="car-text">
+        <h3>A Lenda que conquistou o mundo</h3>
+        <p>O Nissan Skyline GT-R R34, pilotado por Brian O'Conner (Paul Walker) no filme <strong>Velozes & Furiosos</strong>, se tornou um dos carros mais icônicos da história do cinema e do automobilismo JDM.</p>
+        
+        <p>Conhecido como "Godzilla" no Japão, ele impressiona com seu motor RB26DETT biturbo, sistema de tração integral e design agressivo.</p>
+
+        <div class="specs">
+          <div class="spec">
+            <strong>Motor</strong>
+            RB26DETT 2.6L Twin-Turbo
+          </div>
+          <div class="spec">
+            <strong>Potência</strong>
+            276 cv (oficial) • acima de 320 cv na prática
+          </div>
+          <div class="spec">
+            <strong>Tração</strong>
+            Integral AWD (ATTESA E-TS)
+          </div>
+          <div class="spec">
+            <strong>Ano no Filme</strong>
+            2003
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Timeline da História -->
+    <div class="timeline">
+      <div class="event">
+        <div class="year">1998</div>
+        <strong>Lançamento</strong><br>
+        O R34 é lançado no Japão como a quinta geração do Skyline GT-R.
+      </div>
+      <div class="event">
+        <div class="year">2003</div>
+        <strong>Velozes & Furiosos</strong><br>
+        O carro ganha fama mundial ao aparecer nas ruas de Los Angeles no primeiro filme da franquia.
+      </div>
+      <div class="event">
+        <div class="year">Hoje</div>
+        <strong>Lenda Viva</strong><br>
+        Unidades originais valem fortunas. Réplicas e modificações continuam populares entre os fãs de corridas e JDM.
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>🏎️ Nissan Skyline GT-R R34 • Ícone de Velocidade e Velozes & Furiosos • 2026</p>
+  </footer>
+
+</body>
+</html>
